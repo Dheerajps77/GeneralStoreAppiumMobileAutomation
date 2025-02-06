@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Master Test Suite" parallel="tests" thread-count="3">
+    <test name="Android Tests">
+        <parameter name="platform" value="Android"/>
+        <classes>
+            <class name="com.appium.example.test.SignupTest"/>
+            <class name="com.appium.example.test.SwipeTest"/>
+        </classes>
+    </test>
+    <test name="iOS Tests">
+        <parameter name="platform" value="iOS"/>
+        <classes>
+            <class name="com.appium.ios.test.LoginTest"/>
+        </classes>
+    </test>
+    <test name="BrowserStack Tests">
+        <parameter name="platform" value="BrowserStack"/>
+        <classes>
+            <class name="com.appium.cloud.test.BrowserStackTest"/>
+        </classes>
+    </test>
+</suite>

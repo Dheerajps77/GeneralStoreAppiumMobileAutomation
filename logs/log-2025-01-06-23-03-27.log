@@ -1,0 +1,3 @@
+2025-01-06 23:03:27.464 [main] WARN  com.appium.generalStore.utility.CommonConstants - The default environment 'uat' will be enabled for this run.
+2025-01-06 23:03:27.468 [main] WARN  com.appium.generalStore.utility.CommonConstants - The default platform 'android' will be enabled for this run.
+2025-01-06 23:03:27.526 [main] INFO  com.appium.generalStore.base.BaseClass - Appium driver and service stopped successfully.

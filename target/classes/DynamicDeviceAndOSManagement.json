@@ -1,0 +1,10 @@
+{
+    "android": {
+        "device": "Google Pixel 6 Pro",
+        "os_version": "12.0"
+    },
+    "ios": {
+        "device": "iPhone 14 Pro",
+        "os_version": "16.0"
+    }
+}

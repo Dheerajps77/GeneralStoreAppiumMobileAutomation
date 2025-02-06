@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Test Suite" parallel="methods" thread-count="5">
+    <test name="Android Regression Tests">
+        <parameter name="platform" value="Android"/>
+        <classes>
+            <class name="com.appium.generalStore.ScreenTests.SignupTest">
+                <methods>
+                    <include name="testSignup"/>
+                </methods>
+            </class>
+            <class name="com.appium.generalStore.ScreenTests.SwipeTest">
+                <methods>
+                    <include name="testYouFoundMeLogo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="iOS Regression Tests">
+        <parameter name="platform" value="iOS"/>
+        <classes>
+            <class name="com.appium.generalStore.ScreenTests.LoginTest">
+                <methods>
+                    <include name="testLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
