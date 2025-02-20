@@ -1,0 +1,15 @@
+With Appium 2.15+, MobileElement is deprecated, and we should use WebElement instead. 
+Appium now follows W3C WebDriver protocol more strictly, and AppiumBy should be used instead of MobileBy.
+
+Fixing Compatibility for Appium 2.15+
+Here’s how we update the code to work with Appium 2.15+:
+
+Replace MobileElement → WebElement
+Use AppiumBy instead of MobileBy
+Use AppiumDriver instead of AndroidDriver/IOSDriver where possible
+
+1. Appium 2.15 deprecated MobileElement → Use WebElement
+2. Use AppiumBy instead of MobileBy
+3. Use BaseOptions instead of DesiredCapabilities
+4. Remove /wd/hub from Appium Server URL
+5. Use @AndroidFindBy and @iOSXCUITFindBy in PageFactory
